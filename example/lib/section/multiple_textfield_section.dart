@@ -1,14 +1,15 @@
 part of '../main.dart';
 
-class ClassSection extends StatefulWidget {
+class MultipleTextfieldSection extends StatefulWidget {
   final scaffoldContext;
-  ClassSection({this.scaffoldContext});
+  MultipleTextfieldSection({this.scaffoldContext});
 
   @override
-  _ClassSectionState createState() => _ClassSectionState();
+  _MultipleTextfieldSectionState createState() =>
+      _MultipleTextfieldSectionState();
 }
 
-class _ClassSectionState extends State<ClassSection> {
+class _MultipleTextfieldSectionState extends State<MultipleTextfieldSection> {
   bool isValidUsername;
   bool isValidEmail;
   bool isValidPassword;

@@ -1,14 +1,14 @@
 part of '../main.dart';
 
-class TextfieldSection extends StatefulWidget {
+class SingleTextfieldSection extends StatefulWidget {
   final scaffoldContext;
-  TextfieldSection({this.scaffoldContext});
+  SingleTextfieldSection({this.scaffoldContext});
 
   @override
-  TextfieldSectionState createState() => TextfieldSectionState();
+  SingleTextfieldSectionState createState() => SingleTextfieldSectionState();
 }
 
-class TextfieldSectionState extends State<TextfieldSection> {
+class SingleTextfieldSectionState extends State<SingleTextfieldSection> {
   TextEditingController _controller;
   bool isValid;
 

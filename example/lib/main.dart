@@ -4,8 +4,8 @@ import 'package:ifonly_example/widget/valid_button.dart';
 import 'package:regexpattern/regexpattern.dart';
 import 'package:ifonly/ifonly.dart';
 
-part 'section/class_section.dart';
-part 'section/textfield_section.dart';
+part 'section/multiple_textfield_section.dart';
+part 'section/single_textfield_section.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,12 +40,12 @@ class _MainPageState extends State<MainPage> {
                   EdgeInsets.symmetric(horizontal: 20.0).copyWith(top: 20.0),
               child: Column(
                 children: <Widget>[
-                  TextfieldSection(scaffoldContext: scContext),
+                  SingleTextfieldSection(scaffoldContext: scContext),
                   Container(
                     child: Divider(),
                     margin: EdgeInsets.symmetric(vertical: 20.0),
                   ),
-                  ClassSection(scaffoldContext: scContext),
+                  MultipleTextfieldSection(scaffoldContext: scContext),
                 ],
               ),
             ),
