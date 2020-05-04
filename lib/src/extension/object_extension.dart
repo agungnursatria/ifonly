@@ -1,6 +1,6 @@
 import 'package:ifonly/ifonly.dart';
 
-extension DynamicExtension on Object {
+extension ObjectExtension on Object {
   /// Check whether the value is null.
   bool isNull() => this == null || this.toString() == 'null';
 

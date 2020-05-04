@@ -73,8 +73,9 @@ class _MultipleTextfieldSectionState extends State<MultipleTextfieldSection> {
         /// TextFormField - Age
         TextFormField(
           onChanged: (value) => setState(() {
-            isValidAge =
-                value.isNotNullOrBlank() && num.tryParse(value) != null;
+            isValidAge = value.ifNotNullOrBlank(
+              () => RegexValidation.hasMatch(value, RegexPattern.numericOnly),
+            );
           }),
           decoration: InputDecoration(
             hintText: 'Enter your age here...',
@@ -100,7 +101,7 @@ class _MultipleTextfieldSectionState extends State<MultipleTextfieldSection> {
         /// TextFormField - Address
         TextFormField(
           onChanged: (value) => setState(() {
-            isValidAddress = value.isNotNullOrBlank();
+            isValidAddress = value.ifNotNullOrBlank(() => true);
           }),
           decoration: InputDecoration(
             hintText: 'Enter your address here...',
