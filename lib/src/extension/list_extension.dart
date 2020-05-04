@@ -2,7 +2,7 @@ import 'package:ifonly/ifonly.dart';
 
 extension ListExtension on List {
   /// Check whether all child fullfiling condition.
-  bool isPassing(bool Function(Object) condition) {
+  bool isCondition(bool Function(Object) condition) {
     if (this.isNullOrEmpty())
       throw FormatException('List cannot be null or empty');
     for (var item in this) if (condition(item) != true) return false;
@@ -10,12 +10,12 @@ extension ListExtension on List {
   }
 
   /// Execute onTrue if all child fullfiling condition.
-  dynamic ifPassing(
+  dynamic ifCondition(
     bool Function(dynamic) condition,
     dynamic Function() onTrue, {
     dynamic Function() onFalse,
   }) =>
-      isPassing(condition).ifCondition(
+      isCondition(condition).ifCondition(
         onTrue: onTrue,
         onFalse: onFalse,
       );
