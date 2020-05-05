@@ -1,8 +1,7 @@
 name: ifonly
 description: Flutter expression helpers for conditional statement. 
 version: 0.1.0
-author:
-homepage:
+homepage: https://github.com/agungnursatria/ifonly
 
 environment:
   sdk: ">=2.6.0 <3.0.0"
