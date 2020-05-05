@@ -11,7 +11,7 @@ extension ListExtension on List {
 
   /// Execute onTrue if all child fullfiling condition.
   dynamic ifCondition(
-    bool Function(dynamic) condition,
+    bool Function(Object) condition,
     dynamic Function() onTrue, {
     dynamic Function() onFalse,
   }) =>

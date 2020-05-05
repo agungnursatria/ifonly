@@ -74,6 +74,7 @@ class SingleTextfieldSectionState extends State<SingleTextfieldSection> {
         SizedBox(height: 8.0),
 
         /// IfWidget Example - IfCaseOnly (Value as IfCases)
+        /// No need to make caseBuilder
         IfCaseOnly<IfCases>(
           value: IfCases(
             cases: [
