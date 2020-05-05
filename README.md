@@ -9,7 +9,7 @@ In your flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  ifonly: ^0.1.0
+  ifonly: ^0.1.1
 ```
 
 ## 🧞‍♂️ Usage
