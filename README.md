@@ -32,7 +32,7 @@ or returning widget like this
 return (isValid) ? RaisedButton(child: Text('Click Me!'), onPressed: () => print('Hi!');) : RaisedButton(child: Text('Please fill the empty field first!'), onPressed: null;
 ```
 
-## 🧙‍♂️ What this package do
+## 🧙‍♂️ What IfOnly do
 
 With this package, we are trying to make a commonly used code easier to read.
 
