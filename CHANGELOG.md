@@ -1,3 +1,7 @@
+## [0.1.3] - 05/05/2020.
+
+* Update readme description.
+
 ## [0.1.2] - 05/05/2020.
 
 * Update readme description.

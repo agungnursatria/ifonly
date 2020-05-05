@@ -1,6 +1,6 @@
 # IfOnly
 
-Flutter conditional (`if`-`else` / `switch`-`case`) helpers to make a more readable and simplifier conditional code.
+Flutter conditional (`if`-`else` / `switch`-`case`) helpers to make a more readable and simpler conditional statement code.
 
 ## 🏃‍♂️ Getting Started
 
@@ -9,7 +9,7 @@ In your flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  ifonly: ^0.1.2
+  ifonly: ^0.1.3
 ```
 
 ## 🧞‍♂️ Usage
