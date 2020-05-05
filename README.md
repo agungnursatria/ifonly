@@ -9,7 +9,7 @@ In your flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  ifonly: ^0.1.1
+  ifonly: ^0.1.2
 ```
 
 ## 🧞‍♂️ Usage
@@ -70,14 +70,8 @@ Or even like this:
 return IfCaseOnly<IfCases>(
     value: IfCases(
         cases: [
-            IfCaseItem(
-                isValid.isTrue(),
-                (context) => RaisedButton(child: Text('Click Me!'), onPressed: () => print('Hi!');)
-            ),
-            IfCaseItem(
-                isValid.isFalse(),
-                (context) => RaisedButton(child: Text('Please fill the empty field first!'),
-            ),
+            IfCaseItem(isValid.isTrue(), (context) => YourValidButton()),
+            IfCaseItem(isValid.isFalse(), (context) => YourInvalidButton()),
         ],
     ),
     defaultBuilder: (context) => Text("Expression's builder is undefined. please input it to caseBuilder."),
@@ -108,7 +102,7 @@ Widget nextButton;
 
 ### More detailed explanation
 
-We have inputting comment to all function code, Go check [Repository](https://github.com/agungnursatria/ifonly/lib) for more.
+We have inputting comment to all function code, Go check [Repository](https://github.com/agungnursatria/ifonly/tree/master/lib) for more.
 
 ## 🙏🏻  Contributions
 
