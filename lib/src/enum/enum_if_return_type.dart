@@ -1,1 +1,0 @@
-enum IfReturnType { Object, Function }

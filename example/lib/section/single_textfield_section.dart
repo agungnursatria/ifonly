@@ -53,10 +53,45 @@ class SingleTextfieldSectionState extends State<SingleTextfieldSection> {
           ),
         ),
         SizedBox(height: 20.0),
+
+        /// IfWidget Example - IfOnly
         IfOnly(
           condition: isValid.isTrue(),
           validBuilder: (context) => ValidButton(onClick: onTapValidButton),
           invalidBuilder: (context) => InvalidButton(),
+        ),
+        SizedBox(height: 8.0),
+
+        /// IfWidget Example - IfCaseOnly
+        IfCaseOnly<bool>(
+          value: isValid.isTrue(),
+          caseBuilder: {
+            true: (BuildContext context) => Text('IfCaseOnly - Valid!'),
+            false: (BuildContext context) => Text('IfCaseOnly - Invalid!'),
+          },
+          defaultBuilder: (context) => Text('value of isValid is null!'),
+        ),
+        SizedBox(height: 8.0),
+
+        /// IfWidget Example - IfCaseOnly (Value as IfCases)
+        IfCaseOnly<IfCases>(
+          value: IfCases(
+            cases: [
+              IfCaseItem(
+                isValid.isTrue(),
+                (context) => Text(
+                  'IfCaseOnly (Value as IfCases) - Valid!',
+                ),
+              ),
+              IfCaseItem(
+                isValid.isFalse(),
+                (context) => Text(
+                  'IfCaseOnly (Value as IfCases) - Invalid!',
+                ),
+              ),
+            ],
+          ),
+          defaultBuilder: (context) => Text('value of isValid is null!'),
         ),
       ],
     );
